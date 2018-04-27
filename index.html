@@ -32,8 +32,24 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>  
     function main () {
-      //Do Something 
+      liOne.click(liOneFun);
+      liTwo.click(liTwoFun);
+      liThree.click(liThreeFun);
     }
+    
+    function liOneFun () {
+      alert("Works");
+    }
+    function liTwoFun () {
+      alert("Works");
+    }
+    function liThreeFun () {
+      alert("Works");
+    }
+    
+    var liOne = $("ul li:nth-child(1)");
+    var liTwo = $("ul li:nth-child(2)");
+    var liThree = $("ul li:nth-child(3)");
     $(main);
   </script>
 </head>
@@ -64,7 +80,7 @@
     <p>On this here website we have three things:</p>
     <ul>
       <li><a>Things we know about Cedric</a></li>
-      <li style="font-weight: bold; color: darkblue;><a>Things we think Cedric would like to do</a></li>
+      <li style="font-weight: bold; color: darkblue;"><a>Things we think Cedric would like to do</a></li>
       <li><a>What Cedric thinks about those things</a></li>
     </ul>
     <footer>Made by <a href="mailto:ezekieladamlopez@gmail.com">Ezekiel Lopez</a></footer>
@@ -75,7 +91,7 @@
     <ul>
       <li><a>Things we know about Cedric</a></li>
       <li><a>Things we think Cedric would like to do</a></li>
-      <li style="font-weight: bold; color: darkblue;><a>What Cedric thinks about those things</a></li>
+      <li style="font-weight: bold; color: darkblue;"><a>What Cedric thinks about those things</a></li>
     </ul>
     <footer>Made by <a href="mailto:ezekieladamlopez@gmail.com">Ezekiel Lopez</a></footer>
   </div>
