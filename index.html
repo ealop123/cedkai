@@ -32,24 +32,33 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>  
     function main () {
-      liOne.click(liOneFun);
-      liTwo.click(liTwoFun);
-      liThree.click(liThreeFun);
+      $("#about").css("display", "none");
+      $("#to-do").css("display", "none");
+      $("#thoughts").css("display", "none");
+      
+      $("ul li:nth-child(1)").click(liOneFun);
+      $("ul li:nth-child(2)").click(liTwoFun);
+      $("ul li:nth-child(3)").click(liThreeFun);
     }
     
     function liOneFun () {
-      alert("Works");
+      $("#opening").css("display", "none");
+      $("#about").css("display", "unset");
+      $("#to-do").css("display", "none");
+      $("#thoughts").css("display", "none");
     }
     function liTwoFun () {
-      alert("Works");
+      $("#opening").css("display", "none");
+      $("#about").css("display", "none");
+      $("#to-do").css("display", "unset");
+      $("#thoughts").css("display", "none");
     }
     function liThreeFun () {
-      alert("Works");
+      $("#opening").css("display", "none");
+      $("#about").css("display", "none");
+      $("#to-do").css("display", "none");
+      $("#thoughts").css("display", "unset");
     }
-    
-    var liOne = $("ul li:nth-child(1)");
-    var liTwo = $("ul li:nth-child(2)");
-    var liThree = $("ul li:nth-child(3)");
     $(main);
   </script>
 </head>
