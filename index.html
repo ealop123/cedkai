@@ -19,14 +19,9 @@
     text-align: right;
     font-size: .8em;
   }
-  ul li:nth-child(1) {
-    
-  }
-  ul li:nth-child(2) {
-    
-  }
-  ul li:nth-child(3) {
-    
+  ul li:hover {
+    color: white;
+    font-weight: bold;
   }
   </style>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -43,21 +38,21 @@
     
     function liOneFun () {
       $("#opening").css("display", "none");
-      $("#about").css("display", "unset");
+      $("#about").css("display", "block");
       $("#to-do").css("display", "none");
       $("#thoughts").css("display", "none");
     }
     function liTwoFun () {
       $("#opening").css("display", "none");
       $("#about").css("display", "none");
-      $("#to-do").css("display", "unset");
+      $("#to-do").css("display", "block");
       $("#thoughts").css("display", "none");
     }
     function liThreeFun () {
       $("#opening").css("display", "none");
       $("#about").css("display", "none");
       $("#to-do").css("display", "none");
-      $("#thoughts").css("display", "unset");
+      $("#thoughts").css("display", "block");
     }
     $(main);
   </script>
